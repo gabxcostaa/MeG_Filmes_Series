@@ -23,6 +23,7 @@ def adicionar_produção(pessoa_logada):
             break
 
         frase_continuar_ou_voltar("✅ Todas as informações foram enviadas com sucesso!", "voltar", "ao Menu Principal")
+        break
 
 def mostrar_tabela_principal(pessoa_logada):
     exibir_tabela("🎬 Tabela das Produções [Filmes/Séries]\n",pessoa_logada.lista_de_producoes, campos_tabela_principal)
@@ -38,4 +39,5 @@ def editar_producao(pessoa_logada):
 def remover_producao(pessoa_logada):
     validar_dados_pre_definidos_de_remover(pessoa_logada)
     salvar_dados()
+
     
